@@ -12,6 +12,7 @@ namespace ConsoleApplication2.Models
         private string dateOfJoining;
         private string password;
         private string contactNo;
+        private Address address;
 
         public int Id
         {
@@ -38,6 +39,12 @@ namespace ConsoleApplication2.Models
         {
             get { return contactNo; }
             set { contactNo = value; }
+        }
+        
+        public Address AddressObject
+        {
+            get { return address; }
+            set { address = value; }
         }
     }
 }
